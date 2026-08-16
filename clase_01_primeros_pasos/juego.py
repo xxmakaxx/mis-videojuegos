@@ -24,6 +24,8 @@ while ejecutando: #Comienza el bucle principal del juego
             ejecutando = False #Si el usuario cierra la ventana, la variable pasa a false y el bucle principal termina, cerrando el juego
 
     teclas = pygame.key.get_pressed() #Obtiene el estado del teclado. teclas almacena que teclas estan pusladas en ese momento
+    x = max(0, min(ANCHO - 50, x)) #Evita que el cuadro se salga de la ventana por la izquierda o derecha
+    y = max(0, min(ALTO - 50, y)) #Evita que el cuadro se salga de la ventana por arriba o abajo
     if teclas[pygame.K_LEFT]: #Comprueba si la flecha izquierda del teclado esta pulsada
         x -= velocidad #Resta 5 a x, lo que hace que el cuadro se mueva 5 pixeles a la izquierda
     if teclas[pygame.K_RIGHT]: #Comprueba si la flecha derecha del teclado esta pulsada
