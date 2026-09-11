@@ -35,7 +35,7 @@ historia = {
         "opciones": [("Hablar con el mono", "mono"), ("Abrir el cofre a escondidas", "cofre")],
     },
     "mono": {
-        "texto": "El monmo habla: 'Dame una banana y el tesoro será tuyo!'",
+        "texto": "El mono habla: 'Dame una banana y el tesoro será tuyo!'",
         #El tercer valor de la tupla es el objeto requerido
         "opciones": [("Dar la banana", "tesoro", "banana"), ("Negarme", "inicio")],
     },
